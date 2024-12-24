@@ -87,3 +87,14 @@ variable "jwt_secret_key" {
   sensitive   = true
 }
 
+variable "ssl_cert_path" {
+    description = "Path to the SSL certificate"
+    type        = string
+    default     = "/app/certs/cert.pem"
+}
+
+variable "ssl_key_path" {
+    description = "Path to the SSL private key"
+    type        = string
+    default     = "/app/certs/priv.pem"
+}
